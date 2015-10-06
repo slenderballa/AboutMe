@@ -9,10 +9,18 @@
 
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/hamburger"></FrameLayout>
+        android:background="@drawable/hamburger">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I love food! There isn&apos;t any sort of food that I don&apos;t like. I am also eating 24/7. "
+            android:id="@+id/textView6"
+            android:layout_gravity="left|top"
+            android:textColorHighlight="#010101"
+            android:textColor="#010101"/>
+    </FrameLayout>
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

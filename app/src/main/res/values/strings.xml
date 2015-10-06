@@ -21,4 +21,5 @@
     <string name="title_activity_food">Food</string>
     <string name="title_activity_hiking">Hiking</string>
     <string name="title_activity_basketball">Basketball</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
 </resources>

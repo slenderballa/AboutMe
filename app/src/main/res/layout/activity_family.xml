@@ -9,10 +9,17 @@
 
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/simpsons"></FrameLayout>
+        android:background="@drawable/simpsons">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I am the youngest of 3 siblings. I have 2 older brothers and an older sister. We are all very tall"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|top"
+            android:textColor="#010101"/>
+    </FrameLayout>
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

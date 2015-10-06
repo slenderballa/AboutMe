@@ -36,6 +36,10 @@
             android:name=".Basketball"
             android:label="@string/title_activity_basketball" >
         </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
     </application>
 
 </manifest>

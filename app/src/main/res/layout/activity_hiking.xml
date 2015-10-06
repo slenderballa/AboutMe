@@ -9,10 +9,18 @@
 
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/lonepeak"></FrameLayout>
+        android:background="@drawable/lonepeak">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hiking is one of my favorite pass times/hobbies. I did a lot of hiking over the summer in and out of Utah. I hiked Lone Peak which is shown in the picture."
+            android:id="@+id/textView3"
+            android:layout_gravity="left|top"
+            android:autoText="true"
+            android:textColor="#010101"/>
+    </FrameLayout>
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

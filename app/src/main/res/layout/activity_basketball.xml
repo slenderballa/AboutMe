@@ -9,7 +9,25 @@
 
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/karlmalone"></FrameLayout>
+    android:background="@drawable/karlmalone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I have been playing basketball since birth. It is my passion and I love it. I play for Jordan High and hope to play college."
+            android:id="@+id/textView5"
+            android:layout_gravity="left|top"
+            android:textColor="#ffffff"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/swapScreenButton"
+            android:layout_gravity="right|bottom"/>
+    </FrameLayout>
 
 
 </RelativeLayout>
