@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="activity.gswe4645ctec.aboutme.Music">
+
+
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/music">
+
+        <TextView
+            android:layout_width="236dp"
+            android:layout_height="69dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView"
+            android:layout_gravity="left|top"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I am listening to music almost 24/7. I have a diverse taste and love all genres. Some of my favorite artists include Muse, Eminem, G Eazy, and Rascal Flatts"
+            android:id="@+id/MusicText"
+            android:layout_gravity="left|top"
+            android:textColor="#fff0fa"/>
+    </FrameLayout>
+
+
+</RelativeLayout>
