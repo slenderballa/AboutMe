@@ -10,15 +10,16 @@ import android.widget.Button;
 
 public class Basketball extends AppCompatActivity {
 
+    private Button homeButton;
 
-    private Button swapButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basketball);
 
-        swapButton = (Button) findViewById(R.id.swapScreenButton);
+        homeButton = (Button) findViewById(R.id.homeButton);
     }
 
     @Override
@@ -45,15 +46,21 @@ public class Basketball extends AppCompatActivity {
 
     private void setupListeners()
     {
-        swapButton.setOnClickListener(new View.OnClickListener()
+
+        homeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View buttonView)
             {
+                Intent returnIntent = new Intent();
+                setResult(RESULT_OK, returnIntent);
+                finish();
 
 
-                Intent changeScreen = new Intent(buttonView.getContext(), HomeScreen.class);
-                startActivityForResult(changeScreen, 0);
             }
         });
+
+
+
+
     }
 }

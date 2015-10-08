@@ -4,13 +4,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
 
 public class Music extends AppCompatActivity {
+
+
+    private Button homeButton5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
+
+        homeButton5 = (Button) findViewById(R.id.homeButton5);
+
     }
 
     @Override
@@ -34,4 +43,34 @@ public class Music extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
+
+    private void setupListeners()
+    {
+
+        homeButton5.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent returnIntent = new Intent();
+                setResult(RESULT_OK, returnIntent);
+                finish();
+
+
+            }
+        });
+
+
+
+
+    }
+
+
+
+
 }
+
+

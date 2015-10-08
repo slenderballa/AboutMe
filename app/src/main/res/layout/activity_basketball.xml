@@ -24,9 +24,9 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/swapScreenButton"
-            android:layout_gravity="right|bottom"/>
+            android:text="Return Home"
+            android:id="@+id/homeButton"
+            android:layout_gravity="left|bottom"/>
     </FrameLayout>
 
 

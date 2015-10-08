@@ -27,6 +27,13 @@
             android:id="@+id/MusicText"
             android:layout_gravity="left|top"
             android:textColor="#fff0fa"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Home"
+            android:id="@+id/homeButton5"
+            android:layout_gravity="left|bottom"/>
     </FrameLayout>
 
 

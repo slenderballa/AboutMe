@@ -11,6 +11,10 @@ import android.content.Intent;
 public class HomeScreen extends AppCompatActivity
 {
     private Button basketballButton;
+    private Button familyButton;
+    private Button foodButton;
+    private Button hikingButton;
+    private Button musicButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -52,12 +56,70 @@ public class HomeScreen extends AppCompatActivity
     {
         basketballButton.setOnClickListener(new View.OnClickListener()
         {
+           public void onClick(View buttonView)
+           {
+               Intent changeScreen = new Intent(buttonView.getContext(), Basketball.class);
+               startActivityForResult(changeScreen, 0);
+                }
+            });
+
+
+
+
+
+        familyButton.setOnClickListener(new View.OnClickListener()
+        {
             public void onClick(View buttonView)
             {
-                Intent returnIntent = new Intent();
-                setResult(RESULT_OK, returnIntent);
-                finish();
+                Intent changeScreen = new Intent(buttonView.getContext(), Family.class);
+                startActivityForResult(changeScreen, 0);
             }
         });
+
+
+
+
+
+        foodButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), Food.class);
+                startActivityForResult(changeScreen, 0);
+            }
+        });
+
+
+
+
+
+        hikingButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), Hiking.class);
+                startActivityForResult(changeScreen, 0);
+            }
+        });
+
+
+
+        musicButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), Music.class);
+                startActivityForResult(changeScreen, 0);
+            }
+        });
+
+
+
+
+
+
+
+
+
     }
 }
